@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [database-test suite]">
+  <parameter name="myName" value=" abhay soni "/>
+  <listeners>
+    <listener class-name="com.abhay.practice.CustomListener"/>
+    <listener class-name="com.abhay.practice.CustomReporter"/>
+  </listeners>
+  <test thread-count="5" name="listener test(failed)">
+    <classes>
+      <class name="com.abhay.practice.TestDatabase">
+        <methods>
+          <include name="test4"/>
+          <include name="test3"/>
+          <include name="beforeSuite"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.abhay.practice.TestDatabase -->
+    </classes>
+  </test> <!-- listener test(failed) -->
+</suite> <!-- Failed suite [database-test suite] -->

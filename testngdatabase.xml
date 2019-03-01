@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="database-test suite">
+  <test thread-count="5" verbose="2" name="database test">
+  
+  	<parameter name="myName" value="abhay"/>
+  
+  	<groups>
+  		<run>
+  			<include name="planets"></include>
+  		</run>
+  	</groups>
+  
+    <classes>
+      <class name="com.abhay.practice.TestDatabase"/>
+    </classes>
+  </test>
+</suite> 

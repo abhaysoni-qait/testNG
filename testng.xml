@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+
+
+  <test thread-count="5" verbose="2" name="back-end test">
+  	
+  	
+    <groups>
+		<run>
+			<include name="weekly"></include>
+		</run>
+	</groups>
+  	
+    <classes>
+      <class name="com.abhay.practice.TestEmployeeBusinessLogic"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" verbose="2" name="front-end test">
+    <classes>
+      <class name="com.abhay.practice.TestEmployeeBusinessLogic"/>
+      <class name="com.abhay.practice.TestSample"/>
+    </classes>
+  </test>
+   <!-- Default test -->
+</suite> <!-- Default suite -->

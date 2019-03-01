@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="database-test suite">
+  
+  <parameter name="myName" value=" abhay soni "></parameter>
+  
+   <listeners>
+      <listener class-name = "com.abhay.practice.CustomListener" />
+      <listener class-name = "com.abhay.practice.CustomReporter" />
+   </listeners>
+  
+  
+  <test thread-count="5" verbose="2" name="listener test">
+  
+    <classes>
+      <class name="com.abhay.practice.TestDatabase"/>
+    </classes>
+  </test>
+</suite> 
